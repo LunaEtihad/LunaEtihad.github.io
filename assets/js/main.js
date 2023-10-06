@@ -207,10 +207,12 @@ progress.each(function () {
 		this.destroy();
 	}, {
 		offset: function offset() {
-			return Waypoint.viewportHeight() - _self.outerHeight() - 100;
+			return Waypoint.viewportHeight() - _self.outerHeight() - 20;
 		}
 	});
 });
+
+
 
 /**
    * Typing effect

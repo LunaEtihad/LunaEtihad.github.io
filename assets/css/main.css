@@ -239,7 +239,7 @@ a {
 }
 
 a:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
     color: #ff594f;
 }
 
@@ -314,7 +314,7 @@ hr {
 .md-btn:hover {
     background-color: #ebebeb;
     color: #000;
-    text-decoration: line-through;
+    text-decoration: underline;
 }
 
 .md-btn[disabled] {
@@ -2156,6 +2156,17 @@ ul {
 .progress__bar {
     position: absolute;
     background-color: #ff594f;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    box-shadow: 0 0 0;
+    transition: width 1s ease;
+}
+
+.progress__bar2 {
+    position: absolute;
+    background-color: #594fff;
     left: 0;
     top: 0;
     bottom: 0;
